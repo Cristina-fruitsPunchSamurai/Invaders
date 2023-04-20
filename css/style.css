@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+
+header { 
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    background-color:#3148AD;
+}
+
+
+.configuration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap: 7px;
+    margin: 30px;
+}
+
+.input--number {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button--style {
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    width :80px;
+    background-color: #9B68E4;
+    color: #ffffff;
+}
+
+.mainBox {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background-color: #5357CA;
+}
+
+.palette {
+    background-color: #4845A3;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    padding: .5em;
+}
+
+.palette-color {
+    margin: .5em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.default-color {
+    background-color: #D2DAE2;
+    border: 1px solid #000000;
+    width: 30px;
+    height: 30px;
+}
+
+.empty {
+    background-color: #778899;
+    border: 1px solid #000000;
+    width: 30px;
+    height: 30px;
+}
+
+.plain {    
+    background-color: #000000;
+    border: 1px solid #000000;
+    width: 30px;
+    height: 30px;
+}
+
+.light {    
+    background-color: #FBC048;
+    border: 1px solid #FBC048;
+    width: 30px;
+    height: 30px;
+}
+
+.highlight {    
+    background-color: #79EA83;
+    border: 1px solid 	#79EA83;
+    width: 30px;
+    height: 30px;
+}
