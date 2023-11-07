@@ -1,4 +1,4 @@
-//Créer un objet 
+//Créer un objet
 const game = {
     styles: [
         'plain',
@@ -29,7 +29,6 @@ const game = {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const userValue = Number(input.value);
-           
             //Appel à la fonction grid création avec la valeur de l'input comme argument de ma fonction
             game.gridCreation(userValue);
         } )
@@ -49,12 +48,12 @@ const game = {
     },
 
     //Création de la grille
-    gridCreation (gridSize = 8){ //taille 8 par défault 
+    gridCreation (gridSize = 8){ //taille 8 par défault
     const invader = document.querySelector('#invader');
     invader.textContent = '';
     invader.style.display = "grid";
     invader.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
-    invader.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;  
+    invader.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
     //Création du pixel
     game.numberofPixels = gridSize ** 2; //8*8 par default
 
@@ -62,7 +61,7 @@ const game = {
     for(let i = 0; i < game.numberofPixels; i++) {
     const pixel = document.createElement("div");
     pixel.classList.add('default-color');
-    invader.appendChild(pixel); 
+    invader.appendChild(pixel);
     //J'ajoute directement mon event à partir de la création de chaque pixel
     pixel.addEventListener('click', game.handleClickColor);
     }
@@ -81,7 +80,7 @@ const game = {
 
 game.init();
 
-  
+
 
 
 

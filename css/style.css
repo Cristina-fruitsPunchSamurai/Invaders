@@ -6,13 +6,21 @@ body {
 }
 
 
-header { 
+header {
     display: flex;
     justify-content: center;
     height: 20%;
     background-color:#3148AD;
 }
 
+.title {
+    background-color: #000;
+    height: 7%;
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Pixelify Sans', cursive;
+    text-align: center;
+}
 
 .configuration {
     display: flex;
@@ -21,6 +29,7 @@ header {
     height: 20%;
     gap: 7px;
     margin: 30px;
+    padding-top: 30px;
 }
 
 .input--number {
@@ -37,7 +46,7 @@ header {
     color: #ffffff;
 }
 
-.mainBox {    
+.mainBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,21 +88,21 @@ header {
     height: 30px;
 }
 
-.plain {    
+.plain {
     background-color: #000000;
     border: 1px solid #000000;
     width: 30px;
     height: 30px;
 }
 
-.light {    
+.light {
     background-color: #FBC048;
     border: 1px solid #FBC048;
     width: 30px;
     height: 30px;
 }
 
-.highlight {    
+.highlight {
     background-color: #79EA83;
     border: 1px solid 	#79EA83;
     width: 30px;
